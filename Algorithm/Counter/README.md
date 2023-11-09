@@ -39,9 +39,9 @@ const counter = {} // 記分板，初始值為空，如同白紙一般
 // 這邊使用 forEach 代替 for loop 語法
 arr.forEach((number) => {
   if (counter[number]) {
-    counter[number] += 1
+    counter[number] += 1 //白紙上有出現過就在加一分，如同我們會畫正記號一般。
   } else {
-    counter[number] = 1
+    counter[number] = 1 // 沒有出現過就記一分
   }
 })
 
